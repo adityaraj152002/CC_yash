@@ -34,7 +34,7 @@ if (isset($_POST['submit']))
 {
 $email=$_POST['email'];
 $password=$_POST['password'];
-$connect = mysql_connect("localhost","root","");
+$connect = mysql_connect("db-yash.cnwnhpuqjzem.ap-south-1.rds.amazonaws.com","admin","admin123","railway");
 mysql_select_db("foodies") or die("couldn't find database");
 $query = mysql_query("select * from php_users_login where email='$email'");
 $numrows = mysql_num_rows($query);
