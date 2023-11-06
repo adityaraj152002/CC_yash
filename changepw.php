@@ -33,7 +33,7 @@ include("header.php"); ?>
 </body>
 </html>
 <?php
-$connect = mysql_connect("localhost","root","");
+$connect = mysql_connect("db-yash.cnwnhpuqjzem.ap-south-1.rds.amazonaws.com","admin","admin123","railway");
 mysql_select_db("foodies") or die("couldn't find database");
 if (isset($_POST['changepw'])){
 $email=$_POST['email'];
