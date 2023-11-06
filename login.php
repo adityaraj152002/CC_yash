@@ -2,7 +2,7 @@
 session_start();
 if (isset($_POST['submit']))
 {
-	$conn = mysqli_connect("localhost","root","","railway");
+	$conn = mysqli_connect("db-yash.cnwnhpuqjzem.ap-south-1.rds.amazonaws.com","admin","admin123","railway");
 if(!$conn){  
 	echo "<script type='text/javascript'>alert('Database failed');</script>";
   	die('Could not connect: '.mysqli_connect_error());  
