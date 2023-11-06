@@ -3,7 +3,7 @@ session_start();
 	if(empty($_SESSION['user_info'])){
 		echo "<script type='text/javascript'>alert('Please login before proceeding further!');</script>";
 	}
-$conn = mysqli_connect("localhost","root","","railway");
+$conn = mysqli_connect("db-yash.cnwnhpuqjzem.ap-south-1.rds.amazonaws.com","admin","admin123","railway");
 if(!$conn){  
 	echo "<script type='text/javascript'>alert('Database failed');</script>";
   	die('Could not connect: '.mysqli_connect_error());  
